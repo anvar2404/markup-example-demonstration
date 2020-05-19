@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*header*/
+header {
+    position: absolute;
+    width: 100%;
+}
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: white;
+    position: relative;
+    padding: 0 5px;
+}
+.nav-btn:not(:last-child){
+    margin-right: 15px;
+}
+.nav-btn:before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #2dc997;
+    position: absolute;
+    bottom: -7px;
+    transform: scale(0);
+    transition: 0.2s;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.nav-btn:hover:before{
+    transform: scale(1.2);
+}
+
+/*----header*/
+
+/*intro*/
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    background-blend-mode: darken;
+    background: fixed rgba(0, 0, 0, 0.6) url("img/hero-bg.jpg") top center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.hero-content{
+    text-align: center  ;
+}
+.intro-title{
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+.intro-desc{
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px
+}
+.intro-btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 30px;
+    border: 2px solid white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.intro-btn:hover{
+    background-color: #2dc997;
+    border-color: #2dc997;
+}
+
+
+
+/*----intro*/
+
+
+/*about*/
+.about{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.about-info{
+    width: 50%;
+
+}
+.about-title{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.about-desc{
+    font-weight: 300;
+    color: gray;
+    line-height: 1.5;
+    font-size: 18px
+}
+.about-img{
+    background: url(./img/team.jpg) center/cover no-repeat;
+    width: 50%;
+}
+
+.about-item-title{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-left: 80px;
+}
+.about-item-desc{
+    font-weight: 300;
+    font-size: 15px;
+    color: gray;
+    margin-left: 80px;
+}
+.about-icon{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #2dc997;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    height: 30px;
+    width: 30px;
+    fill: #2dc997;
+}
+/*----------------about*/
+
+
+
+
+
+/*FACTS*/
+.facts{
+    margin-bottom: 60px;
+}
+.facts-about-item{
+    text-align: center;
+}
+
+.facts-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.facts-desc{
+    font-size: 16px;
+    color: gray;
+    font-weight: 300;
+}
+.facts-li{
+    display: inline-block;
+    margin: 60px 90px 60px 90px;
+}
+.facts-num{
+    color: #2dc997;
+    font-weight: 200;
+    font-size: 40px;
+}
+.facts-info{
+    color: gray;
+    font-weight: 300;
+    font-size: 18px;
+}
+/*-----------------FACTS*/
+
+
+
+/*services*/
+.services{
+    margin-bottom: 130px;
+    padding: 80px 0 60px 0;
+}
+
+.services-item{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.services-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.services-desc{
+    font-size: 16px;
+    color: gray;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 40px;
+    color: #999;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.col-4{
+     width: 33.33333%;
+     padding: 0 20px;
+}
+
+.col-4-item{
+    padding: 50px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    height: 200px;
+    position: relative;
+    background: #fafafa
+}
+
+.col-4-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.col-4-desc{
+    color: gray;
+    font-weight: 300;
+    font-size: 14px;
+}
+.col-4-icon{
+    border: 1px solid #2dc997;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 155px;
+    background-color: #2dc997;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: 0.2s;
+    flex-direction: column;
+}
+.col-4-icon:hover{
+    background-color: white;
+    border: 2px solid #2dc997;
+    transform: scale(1.2);
+
+}
+
+.col-4-icon svg{
+    fill: white;
+    height: 25px;
+    width: 25px;
+}
+h3.col-4-title{
+    cursor: pointer;
+}
+svg:hover{
+    cursor: pointer;
+}
+
+.col-4-icon:hover svg{
+    cursor: pointer;
+    fill: #2dc997;
+}
+/*-------------services*/
+
+
+
+
+/*call*/
+.call{
+    background: rgba(0, 0, 0, 0.58) url("./img/call-to-action-bg.jpg") no-repeat fixed;
+    background-blend-mode: darken;
+    padding:80px 0 ;
+    margin-bottom: 80px;
+}
+.call .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.call-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-col-9{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: left;
+    align-items: center;
+}
+
+.call-title{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 28px ;
+    color: white;
+    margin-bottom: 20px;
+}
+.call-desc{
+    color: white;
+    margin-bottom: 10px;
+}
+.call-col-3{
+    width: 25%;
+    display: flex;
+    float: right;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.call-btn{
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin: 10px;
+    transition: 0.2s linear;
+}
+
+.call-btn:hover{
+    background-color: #2dc997;
+    border: 2px solid #2dc997;
+}
+
+/*---call*/
+
+/*portfolio*/
+.portfolio{
+    text-align: center;
+    display: block;
+    margin-bottom: 100px;
+}
+.portfolio-title{
+    font-size: 32px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px
+}
+.portfolio-desc{
+    color: #8e8b8b;
+}
+
+.portfolio-nav{
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 70px 50px 10px 0;
+
+
+}
+.portfolio-btn{
+    text-decoration: none;
+    color: #8e8b8b;
+    transition: 0.4s linear;
+    padding: 10px 22px;
+    border-radius: 4px;
+
+}
+.portfolio-btn:hover{
+    background-color: #2dc997;
+
+
+}
+.portfolio-ul{
+    display: flex;
+    justify-content: center;
+}
+.portfolio-col-3{
+    height: 200px;
+    width: 25%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 0 20px;
+}
+
+.portfolio-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 60px;
+}
+.portfolio-col-3 img{
+    transition: 0.6s;
+}
+.portfolio-col-3:hover img{
+    transform: translateY(-25px);
+}
+.overlay{
+    background: #2dc997;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: -50px;
+    transition: 0.3s;
+    text-align: start;
+    color:#ffffff;
+}
+.portfolio-col-3:hover .overlay{
+    bottom: 0;
+}
+
+.overlay-title,.overlay-desc{
+    margin-left: 10px;
+}
+
+.overlay-title{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.overlay-desc{
+    font-size: 13px
+}
+
+
+/*--------portfolio*/
+
+
+/*team*/
+
+.team-title{
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.team-desc{
+    text-align: center;
+    padding-bottom: 40px;
+    color: #999;
+}
+.team-info{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.team-header{
+    width: 100%;
+}
+.team-col-3{
+    width: 25%;
+    overflow: hidden;
+    text-align: center;
+}
+.team-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-3-img{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.col-3-img img{
+    max-width: 100%;
+
+}
+.col-3-info{
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #666666;
+    text-transform: capitalize;
+
+}
+.col-3-desc{
+    font-style: italic;
+    font-size: 13px;
+    color: #666666;
+}
+.social-svg{
+    fill:#b3b3b3;
+    height: 20px;
+    width: 20px;
+    transition: 0.3s;
+}
+.social-svg:hover{
+    fill: #2dc997;
+}
+
+/*----team*/
+
+
+/*contact*/
+.contact{
+    background-color: #f6f6f6;
+    padding: 70px 0 50px;
+}
+.contact-title{
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+}
+.contact-desc{
+    color: #979797;
+    text-align: center;
+}
+.map{
+    margin: 50px 0 30px;
+ }
+.justify-center{
+    justify-content: center;
+}
+.col-3{
+    width: 25%;
+    padding: 0 30px;
+}
+.col-5{
+    width: 41.6666%;
+    padding: 0 30px;
+}
+
+.contacts-info li {
+    list-style: none;
+}
+.contacts-info p {
+    padding: 0 0 10px 50px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.contacts-info i {
+    float: left;
+    font-size: 32px;
+    color: #2dc997;
+    line-height: 0;
+}
+.social a{
+    background-color: #333333;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 7px;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    transition: 0.4s;
+}
+.social a:hover{
+    background-color: #2dc997;
+}
+.forms-row{
+    margin-bottom: 10px;
+
+}
+
+.contacts-form input,
+.contacts-form textarea{
+    width: 100%;
+    padding: 5px 10px;
+    font-family: inherit;
+    border: 1px solid #ced4da;
+}
+.contacts-btn{
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    background: #2dc997;
+    text-decoration: none;
+}
+.contacts-btn:hover{
+    background: #51d8ad;
+}
+
+.btn-center{
+    text-align: center;
+    margin-top: 20px;
+}
+/*-----contacts*/
+
+/*footer*/
+.footer{
+    background: #343b40;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.copyright{
+    text-transform: capitalize;
+}
+.credits{
+    font-size: 13px;
+    color: #ccc;
+}
+.footer-btn{
+    text-decoration: none;
+    color: #2dc997;
+}
