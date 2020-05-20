@@ -26,6 +26,11 @@ header {
     color: white;
 
 }
+.header-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
 
 .nav-btn{
     text-decoration: none;
@@ -33,7 +38,7 @@ header {
     font-size: 13px;
     color: white;
     position: relative;
-    padding: 0 5px;
+    padding: 0 8px;
 }
 .nav-btn:not(:last-child){
     margin-right: 15px;
@@ -53,6 +58,39 @@ header {
 }
 .nav-btn:hover:before{
     transform: scale(1.2);
+}
+.header-drop{
+    position: relative;
+}
+.nav-drop{
+    position: absolute;
+    display: none;
+    top: 32px;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+.header-drop:hover .nav-drop{
+    display: block;
+    transition: 2s;
+}
+.nav-drop li{
+    margin: 4px 0 0 0;
+    min-width: 140px;
+}
+
+.nav-drop a{
+    padding: 10px;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.nav-drop a:hover{
+    background: #2dc997;
+    color: #fff;
 }
 
 /*----header*/
