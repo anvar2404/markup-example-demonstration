@@ -668,6 +668,9 @@ h3.col-4-title{
 .flex{
     display: flex;
 }
+.social-svg:hover {
+    cursor: pointer;
+}
 /*-----contacts*/
 
 /*footer*/
