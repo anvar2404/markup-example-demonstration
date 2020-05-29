@@ -6,6 +6,28 @@
         padding: 0 40px;
         max-width: 1170px;
     }
+    .header-nav{
+        display: none;
+    }
+    /*burger*/
+
+    .burger-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .show-menu span:before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .show-menu span:after{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .show-menu .burger-item{
+        background-color: transparent;
+    }
+    /*----burger*/
 
 
     /*about*/
